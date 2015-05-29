@@ -1,0 +1,71 @@
+\documentclass[11pt]{report}
+\usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
+
+\usepackage[dutch]{babel}
+\selectlanguage{dutch}
+
+\usepackage{color}
+\definecolor{gray75}{gray}{0.75}
+
+\usepackage{framed}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usepackage{amsmath}
+
+\usepackage[colorlinks=true,linkcolor=black]{hyperref}
+
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+
+\newcommand{\hsp}{\hspace{15pt}}
+
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+\titlespacing{\chapter}{0pt}{-3.5ex plus 1ex minus .2ex}{2.3em plus .2ex}
+
+\newlength{\leftbarwidth}
+\setlength{\leftbarwidth}{3pt}
+\newlength{\leftbarsep}
+\setlength{\leftbarsep}{10pt}
+
+\newcommand*{\leftbarcolorcmd}{\color{leftbarcolor}}% as a command to be more flexible
+\colorlet{leftbarcolor}{black}
+
+\renewenvironment{leftbar}{%
+    \def\FrameCommand{{\leftbarcolorcmd{\vrule width \leftbarwidth\relax\hspace {\leftbarsep}}}}%
+    \MakeFramed {\advance \hsize -\width \FrameRestore }}{\endMakeFramed}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+{\huge\bfseries A New Field-Effect Transistor with Selectively Doped $GaAs/n-Al_{x}Ga_{1-x}As$ Heterojunction}
+\\ \bigskip
+{\Large Discussie \& kwalitatieve analyse}
+\end{center}
+\vfill
+\begin{flushleft}
+\setlength{\leftbarwidth}{1pt}
+\colorlet{leftbarcolor}{gray75}
+\begin{leftbar}
+Halfgeleiders \\
+Jelle Verstraaten, 500236946 \\
+\texttt{jelle@benext.nl} \\
+Erik Steuten\\
+E-technology \\
+{\small \today} \\
+\end{leftbar}
+\end{flushleft}
+\end{titlepage}
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+\bibliographystyle{IEEEtran}
+\bibliography{literatuur/literature}
+
+\appendix
+
+\end{document}
