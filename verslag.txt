@@ -1,0 +1,47 @@
+Verslag
+- Over het artikel
+- Minimaal 1 referentie uit het artikel -> Wat moeten we er mee?
+- Goed lopend verhaal
+- Hoe lang moet het verslag zijn?
+- Voeg een kopie van het artikel toe
+- Voeg een kopie toe van het artikel waarnaar het meeste gerefereert wordt.
+- Analoge EN digitale kopie
+
+- Inleiding:
+  - Wie heeft het geschreven, waarom, wanneer
+  - Zijn er meer referenties, vergelijkbare onderzoeken?
+- Discussie:
+  - Zijn de onderzoeksvragen beantwoord?
+  - Hoe goed waren de methodes die in het onderzoek zijn gebruikt?
+  - Wat is de betekenis van de resultaten en waarom?
+  - Hoe passen de resultaten in wat er al bekend is?
+
+Beantwoord de volgende vragen:
+- Inleiding:
+  - Kijk of het artikel in google scholar staat
+  - Waar werkt de auteur? -> Wat is dat voor instituut?
+  - Door wie wordt het onderzoek gefinancieerd?
+  - Is het artikel gepeer-reviewd?
+  - Zijn er meerdere bronnen die tot hetzelfde resultaat komen?
+  - Wordt er verwezen naar eerdere onderzoeken op hetzelfde gebied?
+  - Is het abstract duidelijk en nuttig voor jou?
+  - Kun je met het lezen van de inleiding de context van het artikel achterhalen?
+- Discussie:
+  - Zijn de onderzoeksvragen beantwoord?
+  - Hoe goed waren de methodes die in het onderzoek zijn gebruikt?
+  - Wat is de betekenis van de resultaten en waarom?
+  - Hoe passen de resultaten in wat er al bekend is?
+  - Hoe dragen de resultaten bij aan het orginele doel van het onderzoek?
+- Resultaten:
+  - Gedetaileerde beschrijving van de resultatenin tabellen, figuren, etc.
+  - Laat zien waar je dit terugvindt in het artikel
+- Experimenten:
+  - Welke opstellingen zijn er gebruikt?
+  - Welke methoden zijn er gebruikt?
+- Referenties:
+  - Welke methode wordt gebruikt om referenties weer te geven?
+  - Zoek de referentie waarnaar het artikel het meeste refereert, voeg een kopie toe
+
+
+Inleverdatum: 2015-06-22
+Herkansing: 2015-08-31
