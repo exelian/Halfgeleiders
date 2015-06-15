@@ -1,4 +1,4 @@
-\documentclass[11pt]{report}
+\documentclass[11pt]{article}
 \usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
 
 \usepackage[dutch]{babel}
@@ -11,6 +11,8 @@
 
 \usepackage{graphicx}
 \usepackage{tikz}
+
+\usepackage{wrapfig}
 
 \usepackage{amsmath}
 
@@ -59,11 +61,11 @@ E-technology \\
 \end{flushleft}
 \end{titlepage}
 
+\newpage
 \tableofcontents
-%\listoffigures
-%\listoftables
+\newpage
 
-\chapter{Inleiding}
+\section{Inleiding}
 %In dit hoofdstuk wordt ingegaan op de de schrijvers van het artikel, het onderzoeklaboratorium waar zij werkten en het artikel in het algemeen.
 
 Het artikel dat behandeld wordt, ``A New Field-Effect Transistor with Selectively Doped $GaAs/n-Al_{x}Ga_{1-x}As$ Heterojunction'', is geschreven door Takashi Mimura, Satoshi Hiyamizu, Toshio Fuji en Kazuo Nanbu in 1980. Het artikel is gepubliceerd in het Japanese Journal of Applied Physics (JJAP). Alle artikelen in dit paper zijn gepeer-reviewed. Het artikel borduurd voort een artikel an Dingle et al (Bell Laboratories): ``Electron mobilities in modulation-doped semiconductor heterojunction superlattices''.
@@ -76,59 +78,89 @@ De abstract is duidelijk om geeft meteen aan waarom dit nieuwe type FET interess
 
 In de inleiding wordt duidelijk gemaakt dat dit artikel voortborduurt op het artikel van Dingle et al. In dit artikel wordt een nieuw fenomeen gerapporteerd, namelijk de hogere mobiliteit van elektronen in AlGaAs/GaAs heterojunction. In dit artikel wordt verder gegaan met deze ontdekking en wordt gekeken hoe deze hogere mobiliteit gebruikt kan worden in nieuwe halfgeleider componenten. Deze inleiding geeft een goed beeld van de context waarin het artikel geschreven is.
 
-\chapter{Discussie}
+\section{Discussie}
 De hoofdvraag van dit artikel is: ``Kan de hogere elektronmobiliteit van een heterojunction gebruikt worden voor het fabriceren van een snellere transistor?''. Deze hoofdvraag wordt experimenteel bevestigd door het cree\"eren van onder andere transistoren, diodes en hall-bruggen en het testen hiervan.
+
+Om deze vraag te beantwoorden is gekozen voor een kwantitatieve onderzoeksmethode. Om te kijken of het mogelijk was om transistoren te maken zijn deze eerst gefabriceerd, waarna deze getest zijn. Hierbij werd specifiek gekeken of deze dezelfde verschijnselen vertonen als die uit het voorgaande onderzoek van DIngle et al. Daarna zijn de karakteristieken van deze nieuwe transistor vergeleken met een andere type transistor dat hetzelfde doel heeft.
 
 De resultaten van de testen bevestigen de voorgaande bevindingen van Dingle et al. en wijzen erop dat er een 2-dimensionaal elektrongas ontstaat. Ook wordt aangetoond dat het mogelijk is om het elektrongas te moduleren door het drain-voltage $V_{DS}$ op de transistor te vari\"eren. Deze resultaten zijn belangrijk omdat hiermee de onderzoeksvraag beantwoord kan worden. Ook kan uit deze resultaten afgeleid worden dat dit nieuwe transistorontwerp, op hoge frequenties, inderdaad beter werkt dan andere ontwerpen.
 
-%  - Hoe goed waren de methodes die in het onderzoek zijn gebruikt?
+\newpage
 
-\chapter{Resultaten}
-\section{Figuur 1}
+\section{Resultaten}
+In het artikel worden verschillende testen gedaan om te controlleren of de transistor werkt zoals wordt verwacht. In de figuren \ref{fig:phsyical_structure} en \ref{fig:band_structure} wordt toegelicht hoe de de heterojunction die getest is, is opgebouwd. Hierbij gekeken naar zowel de fysieke structuur (figuur \ref{fig:phsyical_structure}) als naar de bandenstructuur (figuur \ref{fig:band_structure}).
+In figuur \ref{fig:carrierprofile} wordt gekeken of het effect van het 2-dimensionaal elektrongas gereproduceerd kan worden en hoe sterk dat is.
+
+\subsection{Figuur 1a}
+In figuur \ref{fig:phsyical_structure} wordt de fysieke opbouw van de getestte heterojunction schematisch weergegeven. In de tekst wordt toegelicht wat de afmetingen van de lagen zijn en hoe sterk deze gedoteerd zijn.
+
+Ook wordt aangegeven dat deze structuur gecree\"erd is met behulp van MBE (molecular beam epitaxy). Dit is een manier om hoogkristalleine lagen aan te brengen op een substraat.
+
 \begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{physical_structure.png}
-\caption{}
-%\label{fig:}
+  \begin{center}
+    \includegraphics[width=0.4\textwidth]{physical_structure.png}
+    \caption{De fysieke opbouw van de getestte heterojunction}
+    \label{fig:phsyical_structure}
+  \end{center}
 \end{figure}
 
-\section{Figuur 2}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{bandenergy_structure.png}
-\caption{}
-%\label{fig:}
+\subsection{Figuur 1b}
+In figuur \ref{fig:band_structure} wordt gekeken naar de elektrische bandenstructuur van de heterojunction. In dit diagram wordt ge\"illustreerd hoe de bandenstructuur ervoor zorgt dat er een 2-dimensionaal elektrongas ontstaat. 
+
+Er wordt in het artikel weinig ingegaan op waarom er sprake is van ``electron-confinement'' en waarom de elektronen van de donor naar de GaAs-laag migreren. Dit wordt kort aangestipt in de introductie van het artikel. Hier wordt verwezen naar de metingen van Dingle et al. en uitgelegt dat de elektronen naar de GaAs-laag migreren omdat deze een hogere ``elektronenaffiniteit'' heeft. Dit houdt in de elektronen makkelijker kunnen bewegen in de GaAs-laag, omdat ze hier niet afgeremt worden door de donoronzuiverheden.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.4\textwidth]{bandenergy_structure.png}
+    \caption{Opbouw van de bandenstructuur van de getestte heterojunction}
+    \label{fig:band_structure}
+  \end{center}
 \end{figure}
 
-\section{Figuur 3}
-\begin{figure}
-\centering
+\newpage
+
+\subsection{Figuur 2}
+In figuur \ref{fig:carrierprofile} wordt de ``apparent carrier profile'' weergegeven zoals gemeten op 77K. De ``apparent carrier profile'' geeft aan wat de lading (elektronen)dichtheid is op een bepaalde diepte van het substraat.
+
+Dit dichtheidsprofiel is gemeten met behulp van een ``differential capacitance feedback profiler''. Door een voltage over de heterojunction te zetten en dan capaciteit te bepalen kan volgens Kro\"emer et al. bepaald worden hoeveel ladingsdragers er aanwezig zijn op een bepaalde diepte.
+
+De duidelijk waarneembare piek kan duiden op de aanwezigheid van een 2-dimensionaal elektrongas.
+
+\begin{figure}[h]
+  \begin{center}
 \includegraphics[width=0.5\textwidth]{carrier_profile_depth.png}
-\caption{}
-%\label{fig:}
+\caption{Dichtheid van ladingdragers als functie van de doorsnee van de heterojunction. Er is een duidelijk waarneembare piek die kan mogelijk ontstaat door de aanwezigheid van een 2-dimensionaal elektrongas}
+\label{fig:carrierprofile}
+  \end{center}
 \end{figure}
 
-\section{Figuur 4}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{CV-characteristics.png}
-\caption{}
-%\label{fig:}
+\subsection{Figuur 3}
+In figuur \ref{fig:cv_karakteristieken} wordt het stroom-voltage-karakteristiek van het nieuwe type transistor vergeleken met een bestaand type transistor op 300K en op 77K. Er wordt duidelijk toegelicht wat de afmetingen van de heterojunction zijn en op welke voltage en amperage er gemeten is. Ook wordt duidelijk aangegeven wat de shaal is van het grafiek.
+
+Uit de grafieken is duidelijk af te leiden dat het nieuwe type transistor (figuur \ref{fig:cv_karakteristieken}a) voornamelijk op lage temperaturen een veel betere geleiding heeft dan op hogere temperatuur. Dit is voornamelijk om dat de elektronmobiliteit toeneemt op lage temperaturen.
+
+De onderzoekers hebben geprobeerd om de vergelijkingstransistor zoveel mogelijk hetzelfde te krijgen als het nieuwe type. De nieuwe HEMT-transistor heeft, zoals te zien in figuur \ref{fig:carrierprofile}, rond de heterojunction een ladingdichtheid van minimaal $\pm2*10^{17}/cm^3$. De MESFET waarmee vergeleken wordt is daarom zo gedoteerd dat deze een ladingdichtheid van $1.0 * 10^{17}/cm^3$ heeft. Ook is geprobeerd om de gate, source en drain geometrie hetzelfde te houden.
+
+\begin{figure}[h]
+  \begin{center}
+\includegraphics[width=\textwidth]{CV-characteristics.png}
+\caption{Vergelijking van de stroom-voltage-karakteristiek van een HEMT-FET(a) en een MESFET(b)}
+\label{fig:cv_karakteristieken}
+  \end{center}
 \end{figure}
 
-  - Gedetaileerde beschrijving van de resultatenin tabellen, figuren, etc.
-  - Laat zien waar je dit terugvindt in het artikel
+\clearpage
 
-\chapter{Experimenten}
+\section{Experimenten}
   - Welke opstellingen zijn er gebruikt?
   - Welke methoden zijn er gebruikt?
 
-\chapter{Referenties}
+\section{Referenties}
   - Welke methode wordt gebruikt om referenties weer te geven?
   - Zoek de referentie waarnaar het artikel het meeste refereert, voeg een kopie toe
 
-\bibliographystyle{IEEEtran}
-\bibliography{literatuur/literature}
+%\bibliographystyle{IEEEtran}
+%\bibliography{literatuur/literature}
 
 \appendix
 
