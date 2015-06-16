@@ -12,6 +12,7 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 
+\usepackage{subcaption}
 \usepackage{wrapfig}
 
 \usepackage{amsmath}
@@ -51,11 +52,11 @@
 \setlength{\leftbarwidth}{1pt}
 \colorlet{leftbarcolor}{gray75}
 \begin{leftbar}
-Halfgeleiders \\
 Jelle Verstraaten, 500236946 \\
 \texttt{jelle@benext.nl} \\
-Erik Steuten\\
 E-technology \\
+Halfgeleiders \\
+Erik Steuten\\
 {\small \today} \\
 \end{leftbar}
 \end{flushleft}
@@ -88,39 +89,36 @@ De resultaten van de testen bevestigen de voorgaande bevindingen van Dingle et a
 \newpage
 
 \section{Resultaten}
-In het artikel worden verschillende testen gedaan om te controlleren of de transistor werkt zoals wordt verwacht. In de figuren \ref{fig:phsyical_structure} en \ref{fig:band_structure} wordt toegelicht hoe de de heterojunction die getest is, is opgebouwd. Hierbij gekeken naar zowel de fysieke structuur (figuur \ref{fig:phsyical_structure}) als naar de bandenstructuur (figuur \ref{fig:band_structure}).
-In figuur \ref{fig:carrierprofile} wordt gekeken of het effect van het 2-dimensionaal elektrongas gereproduceerd kan worden en hoe sterk dat is.
+In het artikel worden verschillende testen gedaan om te controlleren of de transistor werkt zoals wordt verwacht. In de figuren 1a en 1b wordt toegelicht hoe de de heterojunction die getest is, is opgebouwd. Hierbij gekeken naar zowel de fysieke structuur (figuur 1a) als naar de bandenstructuur (figuur 1b).
+In figuur 2 wordt gekeken of het effect van het 2-dimensionaal elektrongas gereproduceerd kan worden en hoe sterk dat is.
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{physical_structure.png}
+    \caption{De fysieke opbouw van de getestte heterojunction}
+    \label{fig:phsyical_structure}
+  \end{subfigure}
+  ~
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{bandenergy_structure.png}
+    \caption{Opbouw van de bandenstructuur van de getestte heterojunction}
+    \label{fig:band_structure}
+  \end{subfigure}
+\end{figure}
 
 \subsection{Figuur 1a}
-In figuur \ref{fig:phsyical_structure} wordt de fysieke opbouw van de getestte heterojunction schematisch weergegeven. In de tekst wordt toegelicht wat de afmetingen van de lagen zijn en hoe sterk deze gedoteerd zijn.
+In figuur 1a wordt de fysieke opbouw van de getestte heterojunction schematisch weergegeven. In de tekst wordt toegelicht wat de afmetingen van de lagen zijn en hoe sterk deze gedoteerd zijn.
 
 Ook wordt aangegeven dat deze structuur gecree\"erd is met behulp van MBE (molecular beam epitaxy). Dit is een manier om hoogkristalleine lagen aan te brengen op een substraat.
 
-\begin{figure}[h]
-  \begin{center}
-    \includegraphics[width=0.4\textwidth]{physical_structure.png}
-    \caption{De fysieke opbouw van de getestte heterojunction}
-    \label{fig:phsyical_structure}
-  \end{center}
-\end{figure}
-
 \subsection{Figuur 1b}
-In figuur \ref{fig:band_structure} wordt gekeken naar de elektrische bandenstructuur van de heterojunction. In dit diagram wordt ge\"illustreerd hoe de bandenstructuur ervoor zorgt dat er een 2-dimensionaal elektrongas ontstaat. 
+In figuur 1b wordt gekeken naar de elektrische bandenstructuur van de heterojunction. In dit diagram wordt ge\"illustreerd hoe de bandenstructuur ervoor zorgt dat er een 2-dimensionaal elektrongas ontstaat. 
 
 Er wordt in het artikel weinig ingegaan op waarom er sprake is van ``electron-confinement'' en waarom de elektronen van de donor naar de GaAs-laag migreren. Dit wordt kort aangestipt in de introductie van het artikel. Hier wordt verwezen naar de metingen van Dingle et al. en uitgelegt dat de elektronen naar de GaAs-laag migreren omdat deze een hogere ``elektronenaffiniteit'' heeft. Dit houdt in de elektronen makkelijker kunnen bewegen in de GaAs-laag, omdat ze hier niet afgeremt worden door de donoronzuiverheden.
 
-\begin{figure}[h]
-  \begin{center}
-    \includegraphics[width=0.4\textwidth]{bandenergy_structure.png}
-    \caption{Opbouw van de bandenstructuur van de getestte heterojunction}
-    \label{fig:band_structure}
-  \end{center}
-\end{figure}
-
-\newpage
-
 \subsection{Figuur 2}
-In figuur \ref{fig:carrierprofile} wordt de ``apparent carrier profile'' weergegeven zoals gemeten op 77K. De ``apparent carrier profile'' geeft aan wat de lading (elektronen)dichtheid is op een bepaalde diepte van het substraat.
+In figuur 2 wordt de ``apparent carrier profile'' weergegeven zoals gemeten op 77K. De ``apparent carrier profile'' geeft aan wat de lading (elektronen)dichtheid is op een bepaalde diepte van het substraat.
 
 Dit dichtheidsprofiel is gemeten met behulp van een ``differential capacitance feedback profiler''. Door een voltage over de heterojunction te zetten en dan capaciteit te bepalen kan volgens Kro\"emer et al. bepaald worden hoeveel ladingsdragers er aanwezig zijn op een bepaalde diepte.
 
@@ -135,11 +133,11 @@ De duidelijk waarneembare piek kan duiden op de aanwezigheid van een 2-dimension
 \end{figure}
 
 \subsection{Figuur 3}
-In figuur \ref{fig:cv_karakteristieken} wordt het stroom-voltage-karakteristiek van het nieuwe type transistor vergeleken met een bestaand type transistor op 300K en op 77K. Er wordt duidelijk toegelicht wat de afmetingen van de heterojunction zijn en op welke voltage en amperage er gemeten is. Ook wordt duidelijk aangegeven wat de shaal is van het grafiek.
+In figuur 3 wordt het stroom-voltage-karakteristiek van het nieuwe type transistor vergeleken met een bestaand type transistor op 300K en op 77K. Er wordt duidelijk toegelicht wat de afmetingen van de heterojunction zijn en op welke voltage en amperage er gemeten is. Ook wordt duidelijk aangegeven wat de shaal is van het grafiek.
 
-Uit de grafieken is duidelijk af te leiden dat het nieuwe type transistor (figuur \ref{fig:cv_karakteristieken}a) voornamelijk op lage temperaturen een veel betere geleiding heeft dan op hogere temperatuur. Dit is voornamelijk om dat de elektronmobiliteit toeneemt op lage temperaturen.
+Uit de grafieken is duidelijk af te leiden dat het nieuwe type transistor (figuur 3a) voornamelijk op lage temperaturen een veel betere geleiding heeft dan op hogere temperatuur. Dit is voornamelijk om dat de elektronmobiliteit toeneemt op lage temperaturen. Dit is te zien aan de grotere spreiding tussen de lijnen in figuur 3a. Deze lijnen drukken de waardes uit in geleiding ($G_m$) of wel  $1/R$. In het artikel wordt daarna aangetoond dat een beter geleiding direct te vertalen is naar een hogere bandbreedte voor de transistor.
 
-De onderzoekers hebben geprobeerd om de vergelijkingstransistor zoveel mogelijk hetzelfde te krijgen als het nieuwe type. De nieuwe HEMT-transistor heeft, zoals te zien in figuur \ref{fig:carrierprofile}, rond de heterojunction een ladingdichtheid van minimaal $\pm2*10^{17}/cm^3$. De MESFET waarmee vergeleken wordt is daarom zo gedoteerd dat deze een ladingdichtheid van $1.0 * 10^{17}/cm^3$ heeft. Ook is geprobeerd om de gate, source en drain geometrie hetzelfde te houden.
+De onderzoekers hebben geprobeerd om de vergelijkingstransistor zoveel mogelijk hetzelfde te krijgen als het nieuwe type. De nieuwe HEMT-transistor heeft, zoals te zien in figuur 2, rond de heterojunction een ladingdichtheid van minimaal $\pm2*10^{17}/cm^3$. De MESFET waarmee vergeleken wordt is daarom zo gedoteerd dat deze een ladingdichtheid van $1.0 * 10^{17}/cm^3$ heeft. Ook is geprobeerd om de gate-, source- en drain-geometrie hetzelfde te houden zodat deze dezelfde capaciteit hebben.
 
 \begin{figure}[h]
   \begin{center}
@@ -149,21 +147,26 @@ De onderzoekers hebben geprobeerd om de vergelijkingstransistor zoveel mogelijk 
   \end{center}
 \end{figure}
 
-\clearpage
+\newpage
 
 \section{Experimenten}
-\subsection{Methodes}
-\paragraph{Moleculair Beam Epitaxy}
+Voor het testen van het nieuwe type transistor zijn 2 testen gedaan: capaciteit-voltage-profilering en stroom-voltage-karakteristiek bepaling.
 
-\subsection{Opstellingen}
-\paragraph{Capaciteit-voltage-profilering}
-Stukje over CV profiling
+%\subsection{Methodes}
+%\paragraph{Moleculair Beam Epitaxy}
 
-\paragraph{Stroom-voltage-karakteristiek bepaling}
+\subsection{Capaciteit-voltage-profilering}
+Capaciteit-voltage-profilering of CV-profilering is een techniek die gebruikt wordt om de interne structuur van een heterojunction te bepalen. Door een spanning over de heterojunction te zetten wordt een ``depletion-region'' gecree\"erd. Deze bevat geen elektronen of gaten meer, maar heeft nog wel een intrinsieke lading vanwege de aanwezig donoratomen. Deze intrinsieke lading cree\"ert een capaciteit die meetbaar is. Door de spanning over de heterojunction te varie\"eren kan de ``depletion-region'' groter of kleiner gemaakt worden, waardoor gekeken kan worden naar verschillende delen van de heterojunction.
+
+De resultaten van deze test zijn te vinden in figuur 2 van het artikel. In dit grafiek is de gemeten capaciteit omgezet naar een ladingsdichtheid.
+
+\subsection{Stroom-voltage-karakteristiekbepaling}
+De stroom-voltage-karakteristiek of IV-curve is een manier waarop de parameters van een transistor bepaald kunnen worden. Door een vaste stroom aan te bieden op de gate (of base) van een transistor en de spanning over de source-drain of (collector-emitter) te vari\"eren kan bepaald worden wanneer de transistor volledig ``aan'' is en hoe lineair de versterking is van de transistor. Ook kan de zogenaamde ``small-signal applification'' of $H_{fe}$ bepaald worden.
 
 \section{Referenties}
-  - Welke methode wordt gebruikt om referenties weer te geven?
-  - Zoek de referentie waarnaar het artikel het meeste refereert, voeg een kopie toe
+Het artikel gebruikt de ACS of American Chemical Society referentiestijl. Deze stijl volgt he volgende format: Achternaam, Initialen.; Achternaam, Initialen. tijdschrift. jaar, Volume, paginas. 
+
+Alle referenties in het artikel komen slechts 1 keer voor, maar het belangerijkste artikel is het eerst vermeldde artikel: ``Electron mobilities in modulation-doped semiconductor heterojunction superlattices''. De wetenschappers hebben namelijk geprobeerd om de nieuwe bevindingen uit dit artikel te reproduceren en toe te passen en in nieuw type transistor.
 
 %\bibliographystyle{IEEEtran}
 %\bibliography{literatuur/literature}
