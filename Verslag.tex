@@ -39,6 +39,8 @@
     \def\FrameCommand{{\leftbarcolorcmd{\vrule width \leftbarwidth\relax\hspace {\leftbarsep}}}}%
     \MakeFramed {\advance \hsize -\width \FrameRestore }}{\endMakeFramed}
 
+\usepackage{pdfpages}
+
 \begin{document}
 
 \begin{titlepage}
@@ -164,18 +166,19 @@ De resultaten van deze test zijn te vinden in figuur 2 van het artikel. In dit g
 De stroom-voltage-karakteristiek of IV-curve is een manier waarop de parameters van een transistor bepaald kunnen worden. Door een vaste stroom aan te bieden op de gate (of base) van een transistor en de spanning over de source-drain of (collector-emitter) te vari\"eren kan bepaald worden wanneer de transistor volledig ``aan'' is en hoe lineair de versterking is van de transistor. Ook kan de zogenaamde ``small-signal applification'' of $H_{fe}$ bepaald worden.
 
 \section{Referenties}
-Het artikel gebruikt de ACS of American Chemical Society referentiestijl. Deze stijl volgt he volgende format: Achternaam, Initialen.; Achternaam, Initialen. tijdschrift. jaar, Volume, paginas. 
+Het artikel gebruikt de ACS of ``American Chemical Society''-referentiestijl. Deze stijl volgt het volgende format: Achternaam, Initialen.; Achternaam, Initialen. tijdschrift. jaar, Volume, paginas. 
 
 Alle referenties in het artikel komen slechts 1 keer voor, maar het belangerijkste artikel is het eerst vermeldde artikel: ``Electron mobilities in modulation-doped semiconductor heterojunction superlattices''. De wetenschappers hebben namelijk geprobeerd om de nieuwe bevindingen uit dit artikel te reproduceren en toe te passen en in nieuw type transistor.
 
-%\bibliographystyle{IEEEtran}
-%\bibliography{literatuur/literature}
-
 \appendix
 
-\end{document}
+\addcontentsline{toc}{section}{A New Field-Effect Transistor with Selectively Doped $GaAs/n-Al_{x}Ga_{1-x}As$ Heterojunction}
+\includepdf[pages=2-]{1347-4065_19_5_L225.pdf}
 
-Electron mobilities in modulation‐doped semiconductor heterojunction superlattices
+\addcontentsline{toc}{section}{Electron mobilities in modulation-doped semiconductor heterojunction superlattices}
+\includepdf[pages=2-]{190457.pdf}
+
+\end{document}
 
 %Verslag
 %- Over het artikel
